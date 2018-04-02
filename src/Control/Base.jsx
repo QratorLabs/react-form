@@ -35,13 +35,13 @@ class Base extends React.Component {
       PropTypes.instanceOf(React.Component)
     ]),
     isEmpty: PropTypes.func,
-    validators: [],
-    showErrorOn: ['touched', 'dirty'],
-    multipleErrors: false,
-    initialValue: undefined,
-    mapProps: {},
-    getValue: e => e,
-    controlClassName: '',
+    validators: PropTypes.array,
+    showErrorOn: PropTypes.array.isRequired,
+    multipleErrors: PropTypes.bool.isRequired,
+    initialValue: PropTypes.any,
+    mapProps: PropTypes.object,
+    getValue: PropTypes.func.isRequired,
+    controlClassName: PropTypes.string,
   }
 
   static defaultProps = {
