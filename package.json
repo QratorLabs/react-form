@@ -1,6 +1,6 @@
 {
   "name": "@qrator/react-form",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Package for validating and working with forms in React",
   "main": "./lib/index.js",
   "scripts": {
