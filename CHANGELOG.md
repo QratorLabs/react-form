@@ -1,3 +1,9 @@
+#### 0.0.4 (2018-04-02)
+
+##### Bug Fixes
+
+*  BaseControl propTypes ([fa8e013d](https://github.com/QratorLabs/react-form/commit/fa8e013d0ddd9a7367fbd82c57cf04032d0eef1e))
+
 #### 0.0.3 (2018-04-02)
 
 ##### Bug Fixes
