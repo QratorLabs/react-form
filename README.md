@@ -14,7 +14,7 @@
 
 ## Docs
 
-[API](/doc/api.md)
+[Read API docs](https://qratorlabs.github.io/react-form/)
 
 ## Get started
 
@@ -23,7 +23,7 @@
 Install react-form directly from gitlab repo
 
 ```
-npm i -S git+ssh://git@git-pub.qrator.net:2201/frontend/react-form.git
+npm i -S @qrator/react
 ```
 
 ### Create you first form
