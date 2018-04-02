@@ -23,7 +23,7 @@
 Install react-form directly from gitlab repo
 
 ```
-npm i -S @qrator/react
+npm i -S @qrator/react-form
 ```
 
 ### Create you first form
