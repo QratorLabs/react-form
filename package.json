@@ -1,0 +1,57 @@
+{
+  "name": "@qrator/react-form",
+  "version": "0.0.0",
+  "description": "Package for validating and working with forms in React",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build:doc": "./node_modules/jsdoc/jsdoc.js -c jsdoc.conf.json -r src/ -d docs",
+    "build:lib": "node_modules/babel-cli/bin/babel.js ./src -d ./lib --ignore __tests__",
+    "build": "npm run build:doc && npm run build:lib",
+    "changelog:update": "node_modules/generate-changelog/bin/generate",
+    "changelog:commit": "git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md'",
+    "dev": "node_modules/babel-cli/bin/babel.js ./src -w -d ./lib --ignore __tests__ -s inline",
+    "example": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --progress",
+    "getversion": "node ./bin/version.js",
+    "stage:major": "npm run changelog:update -- -M && npm run changelog:commit && npm version major",
+    "stage:minor": "npm run changelog:update -- -m && npm run changelog:commit && npm version minor",
+    "stage:patch": "npm run changelog:update -- -p && npm run changelog:commit && npm version patch",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QratorLabs/react-form.git"
+  },
+  "author": "Qrator Labs",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "copy-webpack-plugin": "^4.5.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "faker": "^4.1.0",
+    "generate-changelog": "^1.7.1",
+    "jest": "^22.4.3",
+    "jest-jasmine2": "^22.4.3",
+    "jsdoc": "^3.5.5",
+    "react-dom": "^16.3.0",
+    "webpack": "^4.4.1",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "peerDependecies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0",
+    "uuid": "^3.2.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "presets": [["env", {
+    "modules": false,
+    "targets": {
+      "browsers": ["last 2 versions"]
+    }
+  }], "react"],
+  "plugins": [
+    "transform-class-properties",
+    "transform-export-extensions",
+    "transform-object-rest-spread",
+    "transform-function-bind",
+    "transform-async-to-generator"
+  ]
+}
