@@ -1,3 +1,9 @@
+#### 0.0.3 (2018-04-02)
+
+##### Bug Fixes
+
+*  Instalation instructions ([e41fc91c](https://github.com/QratorLabs/react-form/commit/e41fc91c80d7a508fa213c2523c29a7a2e0cc7a3))
+
 #### 0.0.2 (2018-04-02)
 
 ##### Bug Fixes
