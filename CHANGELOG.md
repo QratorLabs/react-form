@@ -1,3 +1,9 @@
+#### 0.0.6 (2018-04-03)
+
+##### Bug Fixes
+
+*  default value for initialValue Form prop ([b6735757](https://github.com/QratorLabs/react-form/commit/b673575778fba084a96eb16c6217fdb0f77cdc22))
+
 #### 0.0.5 (2018-04-03)
 
 ##### Bug Fixes
