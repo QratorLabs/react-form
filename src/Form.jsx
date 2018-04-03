@@ -25,7 +25,8 @@ class Form extends React.Component {
   }
   static defaultProps = {
     className: null,
-    preventSubmit: true
+    preventSubmit: true,
+    initialValue: {}
   }
   static childContextTypes = {
     onControlMount: PropTypes.func,
@@ -209,6 +210,7 @@ class Form extends React.Component {
    * @param {Object} value New value for {@link Form}
    */
   reset(restoreInitial=true) {
+    debugger
     for (let [id, control] of Object.entries(this._controls)) {
       control.reset();
     }
