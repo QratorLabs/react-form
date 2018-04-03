@@ -16,7 +16,7 @@ class Select extends React.Component {
       initialValue = [];
       isEmpty = v => !v || v.length == 0;
     }
-    let props = {...this.props, initialValue, isEmpty};
+    let props = {initialValue, ...this.props, isEmpty};
     return <Base {...props}/>;
   }
 }
