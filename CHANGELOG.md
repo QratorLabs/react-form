@@ -1,3 +1,9 @@
+#### 0.0.5 (2018-04-03)
+
+##### Bug Fixes
+
+*  Select control fix initialValue prop ([1514e39c](https://github.com/QratorLabs/react-form/commit/1514e39cde690ade9dd935d9bcb4749f22bdc797))
+
 #### 0.0.4 (2018-04-02)
 
 ##### Bug Fixes
