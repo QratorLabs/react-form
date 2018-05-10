@@ -155,11 +155,11 @@ class Base extends React.Component {
    * Current value of control
    */
   get value() {
-    if (!this.inited) {
-      return this.props.initialValue;
-    }
     if (this.props.hasOwnProperty('value')) {
       return this.props.value;
+    }
+    if (!this.inited) {
+      return this.props.initialValue;
     }
     return this._form.getControlValue(this.name, this.id);
   }
