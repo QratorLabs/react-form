@@ -6,8 +6,8 @@ class Button extends React.Component {
   static defaultProps = {
     disabledOnInvalid: true,
     component: props => (
-      <button disabled={disabled} {...props}>
-        {btnProps.children}
+      <button {...props}>
+        {props.children}
       </button>
     ),
   };
