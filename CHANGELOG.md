@@ -5,6 +5,13 @@
 *  BaseControl initializing case ([38dd5916](https://github.com/QratorLabs/react-form/commit/38dd59163b6db9b0c9f79832254bde832f296ec1))
 *  Button props passsing ([d6f84b0f](https://github.com/QratorLabs/react-form/commit/d6f84b0f8278e6d8304924ba462255fd41ac0d1a))
 
+#### 0.0.7 (2018-05-10)
+
+##### Bug Fixes
+
+*  BaseControl initializing case ([38dd5916](https://github.com/QratorLabs/react-form/commit/38dd59163b6db9b0c9f79832254bde832f296ec1))
+*  Button props passsing ([d6f84b0f](https://github.com/QratorLabs/react-form/commit/d6f84b0f8278e6d8304924ba462255fd41ac0d1a))
+
 #### 0.0.6 (2018-04-03)
 
 ##### Bug Fixes
