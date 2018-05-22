@@ -1,3 +1,9 @@
+#### 0.0.8 (2018-05-22)
+
+##### New Features
+
+*  build to commonjs ([fd0e3623](https://github.com/QratorLabs/react-form/commit/fd0e3623dac18cf5b16d3a72c87937c33617d5d4))
+
 #### 0.0.7 (2018-05-10)
 
 ##### Bug Fixes
