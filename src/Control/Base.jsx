@@ -342,7 +342,7 @@ class Base extends React.Component {
       onBlur: ::this.handleBlur,
       onFocus: ::this.handleFocus,
       controlState: this.controlState,
-      modifiers,
+      controlState,
     };
 
     let updatedProps = {};
