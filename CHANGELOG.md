@@ -4,6 +4,12 @@
 
 *  Pass error prop to child component ([21473462](https://github.com/QratorLabs/react-form/commit/2147346214358ba6c81e1fe8f594b584a277ed69))
 
+#### 0.0.11 (2018-05-23)
+
+##### Bug Fixes
+
+*  Pass error prop to child component ([21473462](https://github.com/QratorLabs/react-form/commit/2147346214358ba6c81e1fe8f594b584a277ed69))
+
 #### 0.0.10 (2018-05-23)
 
 #### 0.0.9 (2018-05-22)
