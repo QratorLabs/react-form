@@ -318,13 +318,14 @@ class Base extends React.Component {
     this.controlState.invalid = this.getErrors().length > 0;
     this.controlState.empty = this.props.isEmpty(this.value);
 
-    let modifiers = [
-      ...Object.entries(this.controlState).filter(v => v[1]).map(v => v[0]),
-    ];
+    let controlState = {
+      ...this.controlState,
+      error: this.getVisibleErrors().length > 0,
+    };
 
-    if (this.getVisibleErrors().length > 0) {
-      modifiers.push('error')
-    }
+    let modifiers = [
+      ...Object.entries(controlState).filter(v => v[1]).map(v => v[0]),
+    ];
 
     let baseCls = 'q-form-group';
     let classes = classnames(['q-form-group', this.props.controlClassName, ...modifiers]);
@@ -341,7 +342,7 @@ class Base extends React.Component {
       onChange: ::this.handleChange,
       onBlur: ::this.handleBlur,
       onFocus: ::this.handleFocus,
-      controlState: this.controlState
+      controlState
     };
 
     let updatedProps = {};
