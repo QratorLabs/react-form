@@ -341,8 +341,7 @@ class Base extends React.Component {
       onChange: ::this.handleChange,
       onBlur: ::this.handleBlur,
       onFocus: ::this.handleFocus,
-      controlState: this.controlState,
-      controlState,
+      controlState: this.controlState
     };
 
     let updatedProps = {};
