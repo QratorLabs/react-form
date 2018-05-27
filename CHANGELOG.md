@@ -1,3 +1,9 @@
+#### 0.0.12 (2018-05-27)
+
+##### New Features
+
+*  BaseControl renderErrors prop ([c14da6e5](https://github.com/QratorLabs/react-form/commit/c14da6e5aa951a67712dc0f4b80792f37ba23112))
+
 #### 0.0.11 (2018-05-23)
 
 ##### Bug Fixes
