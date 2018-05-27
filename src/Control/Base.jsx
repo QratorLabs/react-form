@@ -52,6 +52,7 @@ class Base extends React.Component {
     initialValue: undefined,
     mapProps: {},
     getValue: e => e,
+    renderErrors: true,
     controlClassName: '',
   }
 
@@ -293,24 +294,28 @@ class Base extends React.Component {
   }
   render() {
     let props = {...this.props};
-    let errors = this.getVisibleErrors();
+    let visibleErrors = this.getVisibleErrors();
 
-    let errorMessages = errors.filter(e => e.hasOwnProperty('msg'));
+    let errorMessages = visibleErrors.filter(e => e.hasOwnProperty('msg'));
     if (!props.multipleErrors) {
       errorMessages = errorMessages.slice(0, 1);
     }
     let errElement = null;
     
-    if (errorMessages.length) {
+    errorMessages = errorMessages.map((e, i) => {
+      let msg = e.msg;
+      if (typeof msg == 'function') {
+        msg = msg(this.value, this.getFormValue());
+      }
+      return msg;
+    });
+
+    if (errorMessages.length && props.renderErrors) {
       errElement = (
         <div className='q-form-group__errors'>
-          {errorMessages.map((e, i) => {
-            let msg = e.msg;
-            if (typeof msg == 'function') {
-              msg = msg(this.value, this.getFormValue());
-            }
-            return <div className='q-form-group-error' key={i}>{msg}</div>;
-          })}
+          {errorMessages.map((m, i) => (
+            <div className='q-form-group-error' key={i}>{m}</div>
+          ))}
         </div>
       );
     }
@@ -338,6 +343,7 @@ class Base extends React.Component {
 
     props = {
       ...props,
+      errors: errorMessages,
       value: this.value,
       onChange: ::this.handleChange,
       onBlur: ::this.handleBlur,
@@ -363,6 +369,7 @@ class Base extends React.Component {
     delete props['controlClassName'];
     delete props['cid'];
     delete props['controlState'];
+    delete props['renderErrors'];
 
     props = { ...props, ...updatedProps };
 
