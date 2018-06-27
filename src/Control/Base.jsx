@@ -162,7 +162,8 @@ class Base extends React.Component {
     if (!this.inited) {
       return this.props.initialValue;
     }
-    return this._form.getControlValue(this.name, this.id);
+    let val = this._form.getControlValue(this.name, this.id)
+    return val !== undefined ? val : this.props.initialValue;
   }
 
   /**
