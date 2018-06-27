@@ -1,3 +1,9 @@
+#### 0.0.13 (2018-06-27)
+
+##### Bug Fixes
+
+*  Form reset method ([5b3bbb4e](https://github.com/QratorLabs/react-form/commit/5b3bbb4e53286308931c06b73223d437a97a326d))
+
 #### 0.0.12 (2018-05-27)
 
 ##### New Features
