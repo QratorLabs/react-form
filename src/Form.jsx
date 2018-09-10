@@ -193,7 +193,7 @@ class Form extends React.Component {
    */
   getValue() {
     let res = {};
-    for (let name of Object.values(f._controls).map(v => v.name)) {
+    for (let name of Object.values(this._controls).map(v => v.name)) {
       res[name] = this._value[name];
     }
     return res;
