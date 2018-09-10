@@ -1,3 +1,9 @@
+#### 0.0.16 (2018-09-10)
+
+##### Bug Fixes
+
+*  getValue method ([7daac4cb](https://github.com/QratorLabs/react-form/commit/7daac4cbb5a63ca734ad61086a7e1aeb7f526a63))
+
 #### 0.0.15 (2018-09-10)
 
 #### 0.0.15 (2018-09-10)
