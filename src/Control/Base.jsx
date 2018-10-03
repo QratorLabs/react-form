@@ -71,8 +71,11 @@ class Base extends React.Component {
       pending: false,
       empty: true,
     }
+    this.initControlState();
+    this._value = props.hasOwnProperty('value') ? props.value : props.initialValue;
+  }
 
-    
+  initControlState() {
     this.controlState = {...this.initialControlState};
 
     opositeProperty(this.controlState, 'blur', 'focus');
@@ -80,8 +83,6 @@ class Base extends React.Component {
     opositeProperty(this.controlState, 'pristine', 'dirty');
     opositeProperty(this.controlState, 'valid', 'invalid');
     opositeProperty(this.controlState, 'with-value', 'empty');
-
-    this._value = props.hasOwnProperty('value') ? props.value : props.initialValue;
   }
 
   /**
@@ -191,10 +192,7 @@ class Base extends React.Component {
    * @type {Function}
    */
   reset() {
-    this.controlState = {
-      ...this.controlState,
-      ...this.initialControlState
-    };
+    this.initControlState();
     this._showErrors = false;
     this.setValue(this.props.initialValue);
   }
