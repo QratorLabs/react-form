@@ -1,3 +1,9 @@
+#### 0.0.17 (2018-10-03)
+
+##### Bug Fixes
+
+*  Form resets controlState ([9eccd4bd](https://github.com/QratorLabs/react-form/commit/9eccd4bd492f805053fa0adfbf496c37510fed21))
+
 #### 0.0.16 (2018-09-10)
 
 ##### Bug Fixes
