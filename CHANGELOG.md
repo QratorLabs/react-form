@@ -1,3 +1,9 @@
+#### 0.0.18 (2018-11-07)
+
+##### New Features
+
+*  Form stopPropagation prop ([ac6b26cc](https://github.com/QratorLabs/react-form/commit/ac6b26cc2734f6aa20419013a8a45d5a7801ecfe))
+
 #### 0.0.17 (2018-10-03)
 
 ##### Bug Fixes
