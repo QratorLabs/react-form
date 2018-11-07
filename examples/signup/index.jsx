@@ -1,3 +1,4 @@
+import'@babel/polyfill'; 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { 
@@ -85,7 +86,7 @@ class Signup extends React.Component {
           <br/>
         </fieldset><br/>
 
-        <fieldset>
+        {/* <fieldset>
           <legend>Your hobbies</legend>
           <Collection
               ref={el => this._collection = el}
@@ -94,7 +95,7 @@ class Signup extends React.Component {
               component={props => <InputControl placeholder='Your hobby'/>}/>
           <br/>
           <button type="button" onClick={() => this._collection.addValue('')}>Add</button>
-        </fieldset><br/>
+        </fieldset><br/> */}
 
         <fieldset>
           <legend>Gender</legend>

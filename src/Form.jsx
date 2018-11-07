@@ -17,6 +17,8 @@ class Form extends React.Component {
     onSubmit: PropTypes.func,
     onSubmitFailed: PropTypes.func,
     onChange: PropTypes.func,
+    preventSubmit: PropTypes.bool,
+    stopPropagation: PropTypes.bool,
     className: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.object,
@@ -26,6 +28,7 @@ class Form extends React.Component {
   static defaultProps = {
     className: null,
     preventSubmit: true,
+    stopPropagation: false,
     initialValue: {}
   }
   static childContextTypes = {
@@ -171,6 +174,10 @@ class Form extends React.Component {
     }
   }
   handleSubmit(e) {
+    if (this.props.stopPropagation) {
+      e.stopPropagation();
+    }
+    e.stopPropagation();
     if (this.props.preventSubmit) {
       e.preventDefault();
     }

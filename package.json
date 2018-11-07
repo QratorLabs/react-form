@@ -10,7 +10,7 @@
     "changelog:update": "node_modules/generate-changelog/bin/generate",
     "changelog:commit": "git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md'",
     "dev": "node_modules/babel-cli/bin/babel.js ./src -w -d ./lib --ignore __tests__ -s inline",
-    "example": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --progress",
+    "example": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --progress --mode=development",
     "getversion": "node ./bin/version.js",
     "stage:major": "npm run changelog:update -- -M && npm run changelog:commit && npm version major",
     "stage:minor": "npm run changelog:update -- -m && npm run changelog:commit && npm version minor",
@@ -48,6 +48,7 @@
     "jsdoc": "^3.5.5",
     "react-dom": "^16.3.2",
     "webpack": "^4.6.0",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.3"
   },
   "peerDependecies": {
@@ -57,6 +58,8 @@
     "uuid": "^3.2.1"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "classnames": "^2.2.6",
     "react": "^16.3.2"
   }
 }
