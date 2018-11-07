@@ -237,6 +237,7 @@ class Form extends React.Component {
     delete props['initialValue'];
     delete props['onChange'];
     delete props['preventSubmit'];
+    delete props['stopPropagation'];
     return (
       <form {...props}>
         {this.props.children}
